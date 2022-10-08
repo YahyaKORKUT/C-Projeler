@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("1. Sayıyı giriniz");
+            int sayi1;
+            sayi1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("2. Sayıyı giriniz");
+            int sayi2;
+            sayi2 = Int32.Parse(Console.ReadLine());
+            int toplam = sayi1 + sayi2;
+            Console.WriteLine("Toplama işleminin sonucu= " + toplam);
+            Console.ReadKey();
+        }
+    }
+}
