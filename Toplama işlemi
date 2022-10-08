@@ -22,4 +22,4 @@ namespace ConsoleApp6
         }
     }
 }
-// İstediğinz 2 sayıyı girerek toplama işlemi yaptırabilirsiniz.
+// Maksimum 9 basamaklı istediğinz 2 sayıyı girerek toplama işlemi yapabilirsiniz.
