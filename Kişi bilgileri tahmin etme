@@ -1,0 +1,68 @@
+using System;
+using System.Diagnostics.Tracing;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine("İsminiz Nedir?");
+        string isim = Console.ReadLine();
+        if (isim == "Mustafa" || isim == "mustafa")
+        {
+            Console.WriteLine("Sen " + isim + " ERDOĞAN mısın?");
+
+
+            string cevap = Console.ReadLine();
+            if (cevap == "evet" || cevap == "Evet")
+
+            {
+                Console.WriteLine(isim + " Isparta'nın neyi meşhur?");
+               
+                string meşhur = Console.ReadLine();
+                if (meşhur == "gülü" || meşhur == "Gülü")
+                {
+                    Console.WriteLine("Tebrikler " + isim);
+                    Console.ReadKey();
+
+                }
+                else
+                {
+                    Console.WriteLine("Sen nasıl Ispartalısın?");
+                    Console.ReadKey();
+                }
+
+            }
+
+
+
+
+        else
+        {
+
+            Console.WriteLine("Bana mustafa ERDOĞAN'ı bulabilir misin?");
+
+
+            string bulabilir = Console.ReadLine();
+            if (bulabilir == "bulabilirim" || bulabilir == "bulurum")
+            {
+                Console.WriteLine("Teşekkür ederim.");
+                Console.ReadKey();
+
+            }
+            else
+            {
+                Console.WriteLine("Tamam teşekkürler.");
+                Console.ReadKey();
+
+            }
+        }
+
+        }
+        else
+        {
+            Console.WriteLine("Seni tanıyamadım");
+            Console.ReadKey();
+
+        }
+    }
+}
