@@ -1,0 +1,54 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        {
+            Console.WriteLine("İsminizin ilk 2 harfini giriniz");
+            string isim1 = Console.ReadLine();
+            if (isim1.Length < 3)
+            {
+                Console.WriteLine("İsminizin geri kalan harflerini giriniz");
+                string isim2 = Console.ReadLine();
+
+
+
+                Console.WriteLine("Soy isminizin ilk 2 harfini giriniz");
+                string soyisim1 = Console.ReadLine();
+                if (soyisim1.Length < 3)
+                {
+                    Console.WriteLine("Soy isminizin geri kalan harflerini giriniz");
+                    string soyisim2 = Console.ReadLine();
+
+
+                    Console.Write(isim1);
+                    foreach (var harf in isim2)
+                    {
+
+                        Console.Write("*");
+                    }
+                    Console.Write(" " + soyisim1);
+                    foreach (var harf in soyisim2)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.ReadKey();
+
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen sadece ilk 2 harfini giriniz.");
+                    Console.ReadKey();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Lütfen sadece ilk 2 harfini giriniz.");
+                Console.ReadKey();
+            }
+
+        }
+    }
+}
